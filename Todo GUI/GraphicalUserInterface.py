@@ -41,7 +41,7 @@ while True:
                 todo_edit = value['todos'][0]
                 new_todo = value['todo']
                 idx = todos.index(todo_edit)
-                todos[idx] = new_todo + "\n"
+                todos[idx] = new_todo
                 functions.to_write(todos)
                 window['todos'].update(values=todos)
             except IndexError:
