@@ -1,6 +1,10 @@
 import time
 import modules
+import os
 
+if not os.path.exists("todos.txt"):
+    with open ("todos.txt","w"):
+        pass
 def get_todo():
     with open('todos.txt', 'r') as locally:
         local_todos = locally.readlines()
